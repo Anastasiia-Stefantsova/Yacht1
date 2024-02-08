@@ -1,56 +1,3 @@
-:root {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #242424;
-    
-}
-
-body {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    background-color: #0E1823;
-    color: #FBFBFB;
-}
-
-
-p,
-h1,
-h2,
-h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.container {
-    min-width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-
 .reviews {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -69,24 +16,20 @@ ul {
 
 .reviews-item {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: -0.02em;
     text-align: center;
     color: #fbfbfb;
     opacity: 0.4;
     margin-bottom: 40px;
-    
-}
 
-.review-card {
-    
 }
 
 .review-card-list {
     display: flex;
-        justify-content: center;
-        text-align: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .review-card-item {
@@ -95,11 +38,17 @@ ul {
     width: 335px;
     height: 282px;
     background: #fbfbfb;
-    
-        
+
 }
 
-.victoria-card,.ihor-card {
+.foto-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.victoria-card,
+.ihor-card {
     display: none;
 }
 
@@ -107,9 +56,7 @@ ul {
     border-radius: 72px;
     width: 56px;
     height: 56px;
-    
-    
-    
+
 }
 
 .name-client {
@@ -130,11 +77,11 @@ ul {
     letter-spacing: -0.02em;
     text-align: center;
     color: rgba(4, 3, 6, 0.4);
-    
-    
+
+
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .container {
         width: 768px;
         padding-left: 32px;
@@ -145,17 +92,23 @@ ul {
         padding-top: 150px;
         padding-bottom: 150px;
     }
-    .reviews-title{
+
+    .reviews-title {
         font-size: 48px;
     }
 
     .reviews-item {
+        font-size: 14px;
+        line-height: 1.29;
         margin-bottom: 75px;
+        margin-left: 66px;
+        margin-right: 66px;
     }
 
     .victoria-card {
-       display: block; 
+        display: block;
     }
+
     .review-card-list {
         display: flex;
         flex-wrap: nowrap;
@@ -163,7 +116,8 @@ ul {
         justify-content: center;
         text-align: center;
     }
-   
+
+
 }
 
 @media screen and (min-width:1280px) {
@@ -173,7 +127,7 @@ ul {
         padding-right: 50px;
     }
 
-    .reviews-title{
+    .reviews-title {
         font-weight: 500;
         font-size: 48px;
         line-height: 1.0;
@@ -181,6 +135,7 @@ ul {
         text-align: center;
         color: #fbfbfb;
         margin-bottom: 25px;
+        max-width: 854px;
     }
 
     .ihor-card {
@@ -189,7 +144,8 @@ ul {
 
     .review-card-list {
         flex-wrap: wrap;
-            gap: 26px;
+        gap: 26px;
+        max-width: 100%;
     }
 
     .review-card-item {
@@ -198,17 +154,32 @@ ul {
         width: 376px;
         height: 282px;
         background: #fbfbfb;
+        flex-basis: calc((100% - 52px)/3);
+
     }
+
 
     .reviews-team {
-        width: 854px;
-
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        padding-right: 163px;
+        padding-left: 163px;
     }
+
+    .reviews-item {
+        margin-bottom: 75px;
+        margin-left: 141px;
+        margin-right: 141px;
+    }
+
 
 }
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1440px) {
     .container {
         width: 1440px;
     }
+
 }
